@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/littleajax/adventofcode/days/day2"
+	"github.com/littleajax/adventofcode/days/day3"
 
 	"github.com/littleajax/adventofcode/days/day1"
 )
@@ -20,4 +21,8 @@ func main() {
 	fmt.Println(day2Result)
 	day2Result2 := day2.PasswordPositionCheck(day2.ProcessInputs())
 	fmt.Println(day2Result2)
+
+	fmt.Println("Day 3: -----------")
+	day3Result := day3.TreesSmashed(day3.ProcessInputs())
+	fmt.Println(day3Result)
 }
