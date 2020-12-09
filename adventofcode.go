@@ -3,6 +3,13 @@ package main
 import (
 	"fmt"
 
+	"github.com/littleajax/adventofcode/days/day7"
+
+	"github.com/littleajax/adventofcode/days/day5"
+	"github.com/littleajax/adventofcode/days/day6"
+
+	"github.com/littleajax/adventofcode/days/day4"
+
 	"github.com/littleajax/adventofcode/days/day2"
 	"github.com/littleajax/adventofcode/days/day3"
 
@@ -25,4 +32,24 @@ func main() {
 	fmt.Println("Day 3: -----------")
 	day3Result := day3.TreesSmashed(day3.ProcessInputs())
 	fmt.Println(day3Result)
+
+	fmt.Println("Day 4: -----------")
+	day4Result := day4.ValidPassportCount(day4.ProcessInputs())
+	fmt.Println(day4Result)
+
+	fmt.Println("Day 5: -----------")
+	day5Results := day5.GetHighestSeatNumber(day5.ProcessInputs())
+	fmt.Println(day5Results)
+
+	fmt.Println("Day 6: -----------")
+	day6Results := day6.TallyCustomsFields(day6.ProcessInputs())
+	fmt.Println(day6Results)
+	day6q2Results := day6.TallyEveryonesCustomsFields(day6.ProcessEveryonesInputs())
+	fmt.Println(day6q2Results)
+
+	fmt.Println("Day 7: -----------")
+	day7Results := day7.ShinyGoldBagContainers(day7.ProcessInputs())
+	fmt.Println(day7Results)
+	day7q2Results := day7.ShinyGoldBagChildren(day7.ProcessWithChildrenInputs())
+	fmt.Println(day7q2Results)
 }
