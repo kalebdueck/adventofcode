@@ -31,7 +31,7 @@ func ProcessInputs() *Bag {
 		var bag Bag
 		splits := strings.Split(rule, " ")
 		name := splits[0] + splits[1]
-		bag.name = splits[0] + splits[1]
+		bag.name = name
 		bags[name] = &bag
 	}
 

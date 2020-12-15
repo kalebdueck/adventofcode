@@ -1,7 +1,6 @@
 package day7
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 
@@ -11,8 +10,6 @@ import (
 //Build a distributed graph
 //Going the other direction now, not parents, but children, with multiplicative counts
 func ShinyGoldBagChildren(shinyGold *BagWithChildren) (totalChildren int) {
-	fmt.Println("parent.name:" + shinyGold.name)
-	fmt.Println(shinyGold.children)
 	for _, child := range shinyGold.children {
 		if child.bag.visited == true {
 			//continue

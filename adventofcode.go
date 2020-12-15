@@ -3,7 +3,12 @@ package main
 import (
 	"fmt"
 
+	"github.com/littleajax/adventofcode/days/day12"
+
+	"github.com/littleajax/adventofcode/days/day10"
 	"github.com/littleajax/adventofcode/days/day7"
+	"github.com/littleajax/adventofcode/days/day8"
+	"github.com/littleajax/adventofcode/days/day9"
 
 	"github.com/littleajax/adventofcode/days/day5"
 	"github.com/littleajax/adventofcode/days/day6"
@@ -52,4 +57,43 @@ func main() {
 	fmt.Println(day7Results)
 	day7q2Results := day7.ShinyGoldBagChildren(day7.ProcessWithChildrenInputs())
 	fmt.Println(day7q2Results)
+
+	fmt.Println("Day 8: -----------")
+	day8Results := day8.GetFinalAccumulatorValue(day8.ProcessInputs())
+	fmt.Println(day8Results)
+	day8q2Results := day8.GetUncorruptedAccumulatorValue(day8.ProcessInputs())
+	fmt.Println(day8q2Results)
+
+	fmt.Println("Day 9: -----------")
+	day9Results := day9.FirstInvalidNumber(day9.ProcessInputs())
+	fmt.Println(day9Results)
+	day9q2low, day9q2high := day9.SmallestAndLargestOfAContiguousRange(day9.ProcessInputs(), day9Results)
+	fmt.Println(day9q2low + day9q2high)
+
+	fmt.Println("Day 10: -----------")
+	day10Results := day10.JoltageCalculator(day10.ProcessInputs())
+	fmt.Println(day10Results)
+	day10q2Results := day10.PermutationsCalculator(day10.ProcessInputs())
+	fmt.Println(day10q2Results)
+
+	fmt.Println("Day 11: -----------")
+	//so bad
+	//day11Results := day11.GetFerryRoundCount(5)
+	//fmt.Println(day11Results)
+
+	fmt.Println("Day 12: -----------")
+
+	ship := day12.Ship{
+		Facing: 0,
+	}
+	day12Results := day12.ExecuteOrders(ship, day12.ProcessInputs())
+	fmt.Println(day12Results)
+
+	waypointShip := day12.WaypointShip{
+		WaypointX: 10,
+		WaypointY: 1,
+	}
+	day12q2Results := day12.ExecuteWaypointOrders(waypointShip, day12.ProcessInputs())
+	fmt.Println(day12q2Results)
+
 }
